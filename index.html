@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image" href="res/go.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ADA Students Feed Back</title>
+</head>
+<body>
+  <div class="Header">
+     <p><span> ADA </span> Students Feed Back</p>
+     <input id="feedbacklist" type="button" value="Recent Feed Back ">
+  </div>
+  <div class="main_container">
+      <div class="container_text">
+          <img src="res/we-want-you.png" alt="">
+          <p>To give us feedback, because this course is made for you! Because it's all about you!</p>
+          <div class="para">
+              Fill this form if you:<br>
+                    - Find an error in the content or in the quizzes.<br>
+                    - Have a feedback about instructors or the experience.<br>
+                    - Have a suggestion on how to make the course better.
+          </div>
+      </div>
+      <div class="container_form">
+         <a href="https://gomycode.tn/" target="_blank" > <img id="logo" src="res/go.png" alt="Visit Our Web-Site !"></a>
+         <form class="container">
+             <h1>Email Us </h1>
+             <p>Name :</p>
+             <input id="name" type="text" >
+             <p>Slide name (or object) :</p>
+             <input id="slidename" type="text" required>
+             <div class="track">
+                <p>Track :</p>
+                <select id="track_selected">
+                     <option>All</option>
+                     <option>Web</option>
+                     <option>Game</option>
+                 </select>
+            </div>
+             <p>Message :</p>
+             <textarea name="Message" id="input_message" ></textarea>
+                          
+         </form>
+         <input id="submit" type="submit" value="Submit" onclick="aa()">
+      </div>
+  </div>
+  <div id="list">  
+     <table id="mytable">
+         <tr>
+          <th>Track</th>
+          <th>Name</th>
+          <th>Slide name (or object)</th>
+          <th>Message </th>
+         </tr>
+     </table>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,242 @@
+@font-face{
+	src: url("../fonts/Mentega.ttf");
+	font-family: mentega;
+}
+@keyframes myfirst1 {
+  0%   { left: 100px; top: 50px;}
+  50%  { left: 400px; top: 50px;}
+  100% { left: 100px; top: 50px;}
+}
+@keyframes myfirst {
+  0%   { left: 100px; top: 50px;}
+  50%  { left: 700px; top: 50px;}
+  100% { left: 100px; top: 50px;}
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+  background-image: url('../res/img2.jpg')
+}
+/**********  HEADER  **********/ 
+.Header{
+  width: 100%;
+  height: 100px;
+  
+}
+.Header p {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+  font-family: mentega;
+}
+.Header p  span{
+ color: white;
+}
+/* LARGE SCREEN */
+@media(min-width:700px){
+  .Header{
+    width: 600px;
+    margin-left: 150px;
+  }
+  .Header p {
+    position: relative;
+    font-size: 3.5em;
+    padding-top: 30px;
+  } 
+}
+@media(min-width:1000px){
+  .Header p {
+    padding-top: 0;
+  animation: myfirst1 15s 1000;
+  animation-direction: alternate;
+}
+}
+@media(min-width:1400px){
+  .Header p {
+    padding-top: 0;
+  animation: myfirst 15s 1000;
+  animation-direction: alternate;
+}
+}
+/**************   Container     *****************/
+.main_container{
+  
+  position: relative;
+  width: 76%;
+  height: 1300px;
+  margin: 20px auto 50px;
+  box-shadow: 2px 2px 2px black;
+}
+.container_text{
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(130, 179, 235, 0.637);
+}
+.container_text img{
+  width: 80%;
+  margin: 10px 10% 10px ;
+  height: 240px;
+}
+.container_text p{
+  font-weight: bold;
+  margin: 0 40px;
+  font-size: 1.5em;
+  color: darkblue;
+}
+.para{
+  color: black;
+  font-size: 1.25em;
+  margin: 20px 40px;
+  line-height: 32px;
+}
+.container_form{
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.678);
+}
+.container_form h1{
+  margin-bottom: 20px;
+}
+.container{
+  margin: 0 30px ;
+  line-height: 40px; 
+}
+#logo{
+  display : none ;
+}
+.container input{
+  width: 50%;
+  height: 30px;
+} 
+#input_message{
+  width: 100%;
+  height: 130px;
+}
+
+.track{
+  width: 100%;
+  height: 100px;
+}
+#submit{
+  font-size: 2.5em;
+  font-family: mentega;
+  width: 90%;
+  margin-left: 5%;
+  height: 50px;
+  background-color: rgba(130, 179, 235, 0.637);
+  border-color: rgba(130, 179, 235, 0.637);
+}
+#submit:hover{
+  background-color: darkblue ;
+  color: white;
+  border-color: white;
+  transition: color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+#feedbacklist{
+  display : none ;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.3em;
+  font-family: mentega;
+  width: 150px;
+  height: 100px;
+  background-color: rgba(130, 179, 235, 0.637);
+  border-color: rgba(130, 179, 235, 0.637);
+  box-shadow: 2px 2px 2px black;
+}
+#feedbacklist:hover{
+  background-color: darkblue ;
+  color: white;
+  border-color: white;
+  transition: color 2s ease-out;
+  transition: background-color 2s ease-out;
+} 
+#list{
+  display: none;
+}
+/* LARGE SCREEN */
+@media(min-width:700px){
+.main_container{
+  width: 76%;
+  height: 600px;
+
+}
+.container_text{
+  width: 35%;
+  height: 100%;
+  float: left;
+}
+.container_form{
+   float: right;
+  width: 65%;
+  height: 100%;
+}
+.container{
+  margin: 30px 30px ;
+}
+.container_text p{
+  margin: 0 20px;
+  font-size: 1.10em;
+}
+.para{
+  font-size: 0.9em;
+  margin: 15px 20px;
+  line-height: 25px;
+}
+#logo{
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: 110px;
+  box-shadow: 2px 2px 2px black;
+}
+.track{
+ float: left;
+ margin-left: 60%;
+ margin-top: -100px;
+  width: 100px;
+}
+#list{
+  display: none;
+  width: 76%;
+  height: 600px;
+  position: absolute;
+  top: 120px;
+  left: 162px;
+  background-color: rgba(255, 255, 255, 0.836);
+}
+table{   
+  border: 1px solid black;
+  font-size: 1.5em;
+  width:100%;
+}
+table th{
+  color: red;
+}
+th,td{
+border: 1px solid black; 
+}
+}
+
+@media(min-width:1000px){
+  #feedbacklist{
+    display: block;
+  }
+  .container_text p{
+    margin: 0 40px;
+    font-size: 1.25em;
+  }
+  .para{
+    font-size: 1em;
+    margin: 20px 40px;
+    line-height: 25px;
+  }
+}
